@@ -37,9 +37,10 @@ var setup = function() {
 var draw = function() {
 
         // clear the screen
-        background(255, 255, 0);
 
-	image(char, charX, charY);
+    background(124,0,0);
+    
+    (char, charX, charY);
 	    if(charY > 600) {
 		charY = charY - 600;
 	    }
@@ -51,11 +52,11 @@ var draw = function() {
 	    if(charX < 700 && keyIsPressed && keyCode == RIGHT ) {
 		charX = charX + 25;
 	    }
-	    if(charX > 0 && keyIsPressed && keyCode == UP ) {
+	    if(charX > 50 && keyIsPressed && keyCode == UP ) {
 		charY = charY - 25;
 	    }
 
-	    if(charY < 700 && keyIsPressed && keyCode == DOWN ) {
+	    if(charY < 600 && keyIsPressed && keyCode == DOWN ) {
 		charY = charY + 25;
 	    }
 
